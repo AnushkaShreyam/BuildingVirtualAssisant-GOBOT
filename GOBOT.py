@@ -1,10 +1,10 @@
-
+import pyjokes
 import pyttsx3
 import speech_recognition as speech
 import pywhatkit
 import datetime
 import wikipedia
-import pyjokes
+
 
 listener = speech.Recognizer()
 engine = pyttsx3.init()
@@ -15,7 +15,7 @@ engine.setProperty('voice', voices[0].id)
 #this code:
 #engine.setProperty('voice', voices[0].id)
 
-engine.say('Hi Anushka ')
+engine.say('Hello Sunshine ')
 engine.say('Myself Go-Bot')
 engine.say('Any command?')
 engine.runAndWait()
