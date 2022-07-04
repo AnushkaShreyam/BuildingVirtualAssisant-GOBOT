@@ -54,18 +54,21 @@ def gobot_run():
         time = datetime.datetime.now().strftime('%H : %M')
         #time = datetime.datetime.now().strftime('%I : %M %p')
         #Output of time is in AM/PM form
-        communicate('Current time : ' + time)
+        communicate('Current time is ' + time)
 
     elif 'tell me about' in command:
         person = command.replace('tell me about', '')
         info = wikipedia.summary(person, 1)
         print(info)
         communicate(info)
+        
 
     elif 'are you single' in command:
         communicate('I am in a relationship with wifi')
+        
     elif 'joke' in command:
         communicate(pyjokes.get_joke())
+        
     else:
         communicate('Please say the command again.')
 
