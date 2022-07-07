@@ -62,10 +62,6 @@ def gobot_run():
         print(info)
         communicate(info)
         
-
-    elif 'are you single' in command:
-        communicate('I am in a relationship with wifi')
-        
     elif 'joke' in command:
         communicate(pyjokes.get_joke())
         
