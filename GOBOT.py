@@ -6,7 +6,6 @@ import pywhatkit
 import datetime
 import wikipedia
 
-
 listener = speech.Recognizer()
 engine = pyttsx3.init()
 voices = engine.getProperty('voices')
